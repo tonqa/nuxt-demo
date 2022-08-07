@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Lexend";
+  src: local("Lexend"), url(~assets/fonts/Lexend-Regular.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Abel";
+  src: local("Abel"), url(~assets/fonts/Abel-Regular.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Anton";
+  src: local("Anton"), url(~assets/fonts/Anton-Regular.ttf) format("truetype");
+  font-display: fallback;
+}
+
+:root {
+  --text-header: #3f4954;
+  --text-hover: #a1c4cf;
+  --text-main: #686666da;
+  --text-normal: black;
+  --bg-color: #0f0f0f;
+  --white: #ffffff;
+  --midnight: #104f55;
+  --skypure: #5aaa7f;
+
+  --sky: linear-gradient(120deg, #a1fdc7 0%, #c2fbd1 100%);
+
+  --Abel: "Abel", sans-serif;
+  --Anton: "Anton", sans-serif;
+  --Lexend: "Lexend", sans-serif;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-normal);
+}
+
+a:visited {
+  color: var(--text-normal);
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--skypure);
+}
+
+.breadcrumb a:visited {
+  color: var(--skypure);
+}
+
+.breadcrumb li.is-active a {
+  color: var(--skypure);
+  cursor: pointer;
+  pointer-events: initial;
+}
+
+h1 {
+  font-family: var(--Lexend);
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: var(--Lexend);
+  font-size: 1.9rem;
+}
+
+h3,
+h4,
+h5 {
+  font-family: var(--Abel);
+  font-size: 1.4rem;
+}
+
+p,
+div,
+span {
+  font-family: var(--Abel);
+}
+
+input,
+textarea {
+  font-family: var(--Lexend);
+}
+
+button.highlight-btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: var(--Livvic);
+  cursor: pointer;
+}
